@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Flisk</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 style="margin-top: 100px;">Статистика была создана!</h1>
+            <p>Теперь чтобы статистика работала вставьте код ниже на ваш сайт</p>
+            <code>
+                &lt;script&gt;console.log("[✅] Статистика загружена")
+
+                async function stats(id) {
+                    await fetch(`http://localhost:3000/send-stat?id=${id}`)
+                    await console.log("[✅] Запрос статистики отправлен")
+                }
+                stats(<%= id %>)&lt;/script&gt;
+            </code>
+            <p>И чтобы вывести статистику</p>
+            <code>
+                &lt;iframe src="http://flisk.ml/get-in-chart?id=<%= id %>" frameborder="0"&gt;&lt;/iframe&gt;
+            </code>
+            <p>P.S В ифрейме вы можете ввести свой width и height</p>
+        </div>
+    </header>
+</body>
+</html>

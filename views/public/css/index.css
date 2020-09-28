@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    margin-top: 100px; 
+    font-weight: 900;
+}
+
+.title {
+    font-weight: 900;
+    margin-top: 250px;
+    width: 400px;
+}
+
+.btn-success {
+    margin-top: 50px;
+}
