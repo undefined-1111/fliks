@@ -24,6 +24,21 @@
                 &lt;iframe src="https://fliks.ml/get-in-chart?id=<%= id %>" frameborder="0"&gt;&lt;/iframe&gt;
             </code>
             <p>P.S В ифрейме вы можете ввести свой width и height</p>
+            <p>Также ниже есть код для того чтобы показывалось кол во. новых пользователей</p>
+            <code>
+                &lt;script&gt;console.log("[✅] Статистика загружена");
+
+                let ls = localStorage.getItem("was");
+                async function stats(id) {
+                    if(!ls || ls == null) {
+                        await fetch(`https://fliks.ml/send-stat?id=${id}`);
+                        await console.log("[✅] Запрос статистики отправлен");
+                    } else {
+                        console.log("[❎] Вы были уже на сайте поэтому статистика не отправилась!");
+                    }
+                }
+                stats(<%= id %>)&lt;/script&gt;
+            </code>
         </div>
     </header>
 </body>

@@ -13,25 +13,10 @@
             <h1 class="logo">Flisk</h1>
             <h1 class="title">Статистика для вашего сайта</h1>
             <p>Лучше google analytics</p>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Подключить себе на сайт</button>
             
-            <!-- Modal -->
-            <form action="create" method="POST">
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Подключить себе на сайт</h5>
-                            </div>
-                            <div class="modal-body">
-                                <input type="text" name="create" class="form-control" placeholder="URI">
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Создать для этого сайта скрипт</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <form action="/create" method="POST">
+                <input type="text" name="create" class="form-control" placeholder="URI" style="margin-top: 20px; margin-bottom: 30px;">
+                <button type="submit" class="btn btn-primary">Создать для этого сайта скрипт</button>
             </form> 
         </div>
     </header> 
