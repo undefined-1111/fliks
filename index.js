@@ -93,6 +93,6 @@ app.get("/get-in-chart", async(reqd, resd) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(5555, () => {
     console.log("[LOG] Сервер запущен")
 })

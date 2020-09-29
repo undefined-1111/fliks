@@ -32,21 +32,11 @@
                         </div>
                     </div>
                 </div>
-            </form>
-            <iframe src="http://localhost:3000/get-in-chart?id=157" width="1000px" height="1000px" frameborder="0"></iframe> 
+            </form> 
         </div>
     </header> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-console.log("[✅] Статистика загружена")
-
-async function stats(id) {
-    await fetch(`http://localhost:3000/send-stat?id=${id}`)
-    await console.log("[✅] Запрос статистики отправлен")
-}
-stats(157)
-</script>
 </body>
 </html>
