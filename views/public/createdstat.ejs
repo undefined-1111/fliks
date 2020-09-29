@@ -11,11 +11,11 @@
             <h1 style="margin-top: 100px;">Статистика была создана!</h1>
             <p>Теперь чтобы статистика работала вставьте код ниже на ваш сайт</p>
             <code>
-                &lt;script&gt;console.log("[✅] Статистика загружена")
+                &lt;script&gt;console.log("[✅] Статистика загружена");
 
                 async function stats(id) {
-                    await fetch(`http://18.219.243.111:5555/send-stat?id=${id}`)
-                    await console.log("[✅] Запрос статистики отправлен")
+                    await fetch(`http://18.219.243.111:5555/send-stat?id=${id}`);
+                    await console.log("[✅] Запрос статистики отправлен");
                 }
                 stats(<%= id %>)&lt;/script&gt;
             </code>
